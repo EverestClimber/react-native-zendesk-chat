@@ -46,6 +46,10 @@ public class RNZendeskChatModule extends ReactContextBaseJavaModule {
     VisitorInfo visitorData = builder.build();
 
     ZopimChat.setVisitorInfo(visitorData);
+
+    if (options.hasKey("track")) {
+        ZopimChat.trackEvent(options.getString("track"));
+    }
   }
 
   @ReactMethod

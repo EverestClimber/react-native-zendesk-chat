@@ -20,6 +20,9 @@ RCT_EXPORT_METHOD(setVisitorInfo:(NSDictionary *)options) {
     }
     visitor.shouldPersist = options[@"shouldPersist"] || NO;
   }];
+  if (options[@"track"]) {
+    [[ZDCChat instance].api trackEvent:options[@"track"]];
+  }
 }
 
 RCT_EXPORT_METHOD(startChat:(NSDictionary *)options) {
