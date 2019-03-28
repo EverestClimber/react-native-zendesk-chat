@@ -3,20 +3,25 @@ def safeExtGet(prop, fallback) {
 }
 
 buildscript {
-  repositories {
-    jcenter()
-  }
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+    }
 
-  dependencies {
-    classpath 'com.android.tools.build:gradle:1.3.1'
-  }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+    }
 }
 
 apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', 23)
-    buildToolsVersion safeExtGet('buildToolsVersion', "23.0.1")
+    buildToolsVersion safeExtGet('buildToolsVersion', "28.0.2")
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
@@ -27,11 +32,12 @@ android {
 }
 
 repositories {
-  mavenCentral()
-  maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+    mavenCentral()
+    maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+    google()
 }
 
 dependencies {
-    compile "com.facebook.react:react-native:+"
-    compile group: 'com.zopim.android', name: 'sdk', version: '1.4.2'
+    implementation "com.facebook.react:react-native:+"
+    implementation group: 'com.zopim.android', name: 'sdk', version: '1.4.2'
 }
