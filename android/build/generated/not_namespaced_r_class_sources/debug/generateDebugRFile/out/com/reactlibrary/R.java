@@ -2366,7 +2366,7 @@ public final class R {
         public static int AnimatedStateListDrawableTransition_android_fromId = 1;
         public static int AnimatedStateListDrawableTransition_android_reversible = 2;
         public static int AnimatedStateListDrawableTransition_android_toId = 3;
-        public static int[] AppBarLayout = { 0x10100d4, 0x0, 0x101048f, 0x7f0400b9, 0x7f0400bf, 0x7f04011c };
+        public static int[] AppBarLayout = { 0x10100d4, 0x1010540, 0x101048f, 0x7f0400b9, 0x7f0400bf, 0x7f04011c };
         public static int AppBarLayout_android_background = 0;
         public static int AppBarLayout_android_keyboardNavigationCluster = 1;
         public static int AppBarLayout_android_touchscreenBlocksFocus = 2;
@@ -2691,7 +2691,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
+        public static int[] FontFamilyFont = { 0x1010532, 0x101053f, 0x0, 0x1010533, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;
@@ -2731,7 +2731,7 @@ public final class R {
         public static int GenericDraweeView_roundingBorderColor = 21;
         public static int GenericDraweeView_roundingBorderWidth = 22;
         public static int GenericDraweeView_viewAspectRatio = 23;
-        public static int[] GradientColor = { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x0, 0x0, 0x10101a4, 0x101019d, 0x0, 0x0, 0x1010201, 0x10101a1 };
+        public static int[] GradientColor = { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x1010512, 0x1010513, 0x10101a4, 0x101019d, 0x1010510, 0x1010511, 0x1010201, 0x10101a1 };
         public static int GradientColor_android_centerColor = 0;
         public static int GradientColor_android_centerX = 1;
         public static int GradientColor_android_centerY = 2;
@@ -2744,7 +2744,7 @@ public final class R {
         public static int GradientColor_android_startY = 9;
         public static int GradientColor_android_tileMode = 10;
         public static int GradientColor_android_type = 11;
-        public static int[] GradientColorItem = { 0x10101a5, 0x0 };
+        public static int[] GradientColorItem = { 0x10101a5, 0x1010514 };
         public static int GradientColorItem_android_color = 0;
         public static int GradientColorItem_android_offset = 1;
         public static int[] LinearLayoutCompat = { 0x1010126, 0x1010127, 0x10100af, 0x10100c4, 0x1010128, 0x7f0400ae, 0x7f0400b0, 0x7f040131, 0x7f040171 };

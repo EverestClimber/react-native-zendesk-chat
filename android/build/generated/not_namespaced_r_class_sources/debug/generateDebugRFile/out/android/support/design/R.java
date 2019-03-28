@@ -1852,7 +1852,7 @@ public final class R {
         public static int AlertDialog_multiChoiceItemLayout = 5;
         public static int AlertDialog_showTitle = 6;
         public static int AlertDialog_singleChoiceItemLayout = 7;
-        public static int[] AppBarLayout = { 0x10100d4, 0x0, 0x101048f, 0x7f0400b9, 0x7f0400bf, 0x7f04011c };
+        public static int[] AppBarLayout = { 0x10100d4, 0x1010540, 0x101048f, 0x7f0400b9, 0x7f0400bf, 0x7f04011c };
         public static int AppBarLayout_android_background = 0;
         public static int AppBarLayout_android_keyboardNavigationCluster = 1;
         public static int AppBarLayout_android_touchscreenBlocksFocus = 2;
@@ -2177,7 +2177,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
+        public static int[] FontFamilyFont = { 0x1010532, 0x101053f, 0x0, 0x1010533, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;

@@ -17,53 +17,53 @@ import java.lang.String;
 
 public class RNZendeskChatModule extends ReactContextBaseJavaModule {
 
-  private ReactContext mReactContext;
+    private ReactContext mReactContext;
 
-  public RNZendeskChatModule(ReactApplicationContext reactContext) {
-      super(reactContext);
-      mReactContext = reactContext;
-  }
-
-  @Override
-  public String getName() {
-    return "RNZendeskChat";
-  }
-
-  @ReactMethod
-  public void setVisitorInfo(ReadableMap options) {
-    VisitorInfo.Builder builder = new VisitorInfo.Builder();
-
-    if (options.hasKey("name")) {
-        builder.name(options.getString("name"));
-    }
-    if (options.hasKey("email")) {
-        builder.email(options.getString("email"));
-    }
-    if (options.hasKey("phone")) {
-        builder.phoneNumber(options.getString("phone"));
+    public RNZendeskChatModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        mReactContext = reactContext;
     }
 
-    VisitorInfo visitorData = builder.build();
-
-    ZopimChat.setVisitorInfo(visitorData);
-
-    if (options.hasKey("track")) {
-        ZopimChat.trackEvent(options.getString("track"));
+    @Override
+    public String getName() {
+        return "RNZendeskChat";
     }
-  }
 
-  @ReactMethod
-  public void init(String key) {
-    ZopimChat.init(key);
-  }
+    @ReactMethod
+    public void setVisitorInfo(ReadableMap options) {
+        VisitorInfo.Builder builder = new VisitorInfo.Builder();
 
-  @ReactMethod
-  public void startChat(ReadableMap options) {
-    setVisitorInfo(options);
-    Activity activity = getCurrentActivity();
-    if (activity != null) {
-        activity.startActivity(new Intent(mReactContext, ZopimChatActivity.class));
+        if (options.hasKey("name")) {
+            builder.name(options.getString("name"));
+        }
+        if (options.hasKey("email")) {
+            builder.email(options.getString("email"));
+        }
+        if (options.hasKey("phone")) {
+            builder.phoneNumber(options.getString("phone"));
+        }
+
+        VisitorInfo visitorData = builder.build();
+
+        ZopimChat.setVisitorInfo(visitorData);
+
+        if (options.hasKey("track")) {
+            ZopimChat.trackEvent(options.getString("track"));
+        }
     }
-  }
+
+    @ReactMethod
+    public void init(String key) {
+        ZopimChat.init(key);
+    }
+
+    @ReactMethod
+    public void startChat(ReadableMap options) {
+        setVisitorInfo(options);
+        Activity activity = getCurrentActivity();
+        if (activity != null) {
+            activity.startActivity(new Intent(mReactContext, ZopimChatActivity.class));
+        }
+    }
 
 }

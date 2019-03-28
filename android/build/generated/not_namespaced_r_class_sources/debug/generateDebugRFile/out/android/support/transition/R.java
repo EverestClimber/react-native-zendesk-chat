@@ -162,7 +162,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
+        public static int[] FontFamilyFont = { 0x1010532, 0x101053f, 0x0, 0x1010533, 0x0, 0x7f0400d7, 0x7f0400df, 0x7f0400e0, 0x7f0400e1, 0x7f0401e8 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;
@@ -173,7 +173,7 @@ public final class R {
         public static int FontFamilyFont_fontVariationSettings = 7;
         public static int FontFamilyFont_fontWeight = 8;
         public static int FontFamilyFont_ttcIndex = 9;
-        public static int[] GradientColor = { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x0, 0x0, 0x10101a4, 0x101019d, 0x0, 0x0, 0x1010201, 0x10101a1 };
+        public static int[] GradientColor = { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x1010512, 0x1010513, 0x10101a4, 0x101019d, 0x1010510, 0x1010511, 0x1010201, 0x10101a1 };
         public static int GradientColor_android_centerColor = 0;
         public static int GradientColor_android_centerX = 1;
         public static int GradientColor_android_centerY = 2;
@@ -186,7 +186,7 @@ public final class R {
         public static int GradientColor_android_startY = 9;
         public static int GradientColor_android_tileMode = 10;
         public static int GradientColor_android_type = 11;
-        public static int[] GradientColorItem = { 0x10101a5, 0x0 };
+        public static int[] GradientColorItem = { 0x10101a5, 0x1010514 };
         public static int GradientColorItem_android_color = 0;
         public static int GradientColorItem_android_offset = 1;
     }
