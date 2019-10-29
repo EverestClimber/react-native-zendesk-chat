@@ -9,7 +9,6 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import com.facebook.react.bridge.Callback;
 import com.zopim.android.sdk.api.ZopimChat;
 import com.zopim.android.sdk.model.VisitorInfo;
 import com.zopim.android.sdk.prechat.ZopimChatActivity;
@@ -59,16 +58,12 @@ public class RNZendeskChatModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sendMessage(String message) {
-    }
-
-    @ReactMethod
-    public void startChat(ReadableMap options, Callback cb) {
+    public void startChat(ReadableMap options) {
         setVisitorInfo(options);
         Activity activity = getCurrentActivity();
         if (activity != null) {
             activity.startActivity(new Intent(mReactContext, ZopimChatActivity.class));
         }
-        cb.invoke();
     }
+
 }

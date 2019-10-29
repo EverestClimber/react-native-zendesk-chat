@@ -25,11 +25,7 @@ RCT_EXPORT_METHOD(setVisitorInfo:(NSDictionary *)options) {
   }
 }
 
-RCT_EXPORT_METHOD(sendMessage:(NSString *)message) {
-  [[ZDCChat instance].api sendChatMessage:message];
-}
-
-RCT_EXPORT_METHOD(startChat:(NSDictionary *)options callBack:(RCTResponseSenderBlock)callBack) {
+RCT_EXPORT_METHOD(startChat:(NSDictionary *)options) {
   [self setVisitorInfo:options];
 
   dispatch_sync(dispatch_get_main_queue(), ^{
@@ -41,8 +37,6 @@ RCT_EXPORT_METHOD(startChat:(NSDictionary *)options callBack:(RCTResponseSenderB
         config.tags = options[@"tags"];
       }
     }];
-
-    callBack(@[[NSNull null]]);
   });
 }
 
